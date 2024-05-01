@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML basics</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styletarea.css">
+        
+    </head>
+    <body>  
+        <div class="contenedor">
+            <div class="Asociados" >
+                <form action="#">
+                    <label for="lang">Asociado</label>
+                        <select name="asociado" id="asociado" onchange="opciones();">
+                            <option value="asociado1">Mario</option>
+                            <option value="asociado2">Pineda</option>
+                            <option value="asociado3">Maria</option>
+                            <option value="asociado4">Sabeas</option>
+                            <option value="asociado5"> Manuel</option>
+                            <option value="asociado6">Owhen</option>
+                            <option value="asociado7">Carlos</option>
+                            <option value="asociado8">Jhon</option>
+                        </select>
+            </form>
+            </div>
+            <div class="Areas">
+                <form action="#">
+                    <label for="lang">Areas</label>
+                        <select name="areas" id="area">
+                            <option value="asociado1">Cocina</option>
+                            <option value="asociado2">Mesas</option>
+                            <option value="asociado3">Limpieza</option>
+                            <option value="asociado4">Airbnb</option>
+                    </select>
+                    
+            </form>
+            </div>
+            <div class="taresa">
+                <ul>
+    
+                </ul>
+            </div>
+            <div class="contenedor">
+                <div class="container">
+                    <h1>Lista de Tareas</h1>
+                    <div class="search">
+                        <form action="tareascocina.php" method="post" >
+                            <input type="text" placeholder="Agregar tarea...">
+                            <button class="btn-add">+</button>
+                        </form>
+                    </div>
+                    <div class="li-container">
+                        <ul>
+                            
+                        </ul>
+                    </div>
+                    <div class="empty">
+                        <p>No tienes tareas pendientes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <script src="main.js"></script>
+    <script src="tareas.js"></script>    
+    </body>
+</html>
